@@ -1,0 +1,42 @@
+.container {
+    width: 1224px;
+    margin: 0 auto;
+}
+
+.main {
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+.header {
+    position: relative;
+    background-color: #095D75;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header_inner {
+    background: url("./img/meeting.jpeg") no-repeat left center;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+}
+
+.header_text {
+    position: absolute;
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: flex-end; /* Выравнивание по горизонтали (справа) */
+    width: 83%;
+    padding-top: 80px;
+    color: white;
+    z-index: 1;
+}

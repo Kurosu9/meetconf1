@@ -5,6 +5,8 @@ import { Navbar } from './components/navbar/Navbar';
 import { Footer } from './components/footer/Footer';
 import { Container } from 'react-bootstrap';
 import { MainPage } from './pages/mainPage/MainPage';
+import { RegisterPage } from './pages/registerPage/RegisterPage';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Navbar/>
           <Routes>
             <Route index element={<MainPage/>}/>
+            <Route path='register' element={<RegisterPage/>}/>
           </Routes>
           <Footer/>
         </Container>

@@ -2,6 +2,7 @@ import React from 'react';
 import classes from "./Navbar.module.css";
 import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import logo from './img/logo_w.svg';
 
 
@@ -17,13 +18,13 @@ export function Navbar(props) {
                     </Nav>
                     <Nav className={classes.sections}>
                         <Nav.Item className={classes.section}>
-                            <NavLink className={classes.navlink}>Gallery</NavLink>
+                            <Link className={classes.navlink} to="meets" smooth={true} duration={500} offset={-70}>Meets</Link>
                         </Nav.Item>
                         <Nav.Item className={classes.section}>
-                            <NavLink className={classes.navlink}>Meets</NavLink>
+                            <Link className={classes.navlink}>Gallery</Link>
                         </Nav.Item>
                         <Nav.Item className={classes.section}>
-                            <NavLink className={classes.navlink}>Archive</NavLink>
+                            <NavLink className={classes.navlink} to='/archive'>Archive</NavLink>
                         </Nav.Item>
                     </Nav>
                 </div>

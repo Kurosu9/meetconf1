@@ -10,8 +10,10 @@
 
 .header {
     position: relative;
-    background-color: #1c1d1e;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    height: 500px;
+    border-bottom: 1px solid #575656;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .header::before {
@@ -21,13 +23,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header_inner {
-    background: url("") no-repeat left center;
-    background-size: cover;
-    width: 900px;
+    position: a;
+    background: url("./img/conference.png") no-repeat right 580px center;
+    background-size: 900px;
     height: 500px;
 }
 
@@ -63,7 +65,7 @@
 
 .logos {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .logos_inner {
@@ -80,10 +82,17 @@
 .meets {
     position: relative;
     height: 500px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .meets_inner {
     width: 1080px;
     margin: 0px auto;
+}
+
+/****************SliderOfMeets***********************/
+
+.gallery {
+    position: relative;
+    margin-bottom: 50px;
 }

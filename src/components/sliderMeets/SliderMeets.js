@@ -7,7 +7,6 @@ import expo from './img/expo.jpeg';
 import students from './img/students.jpeg';
 import talking from './img/talking.jpeg';
 import science from './img/science.jpeg';
-import conf from './img/conference.jpeg';
 import awards from './img/awards.jpeg';
 import { MdExpandLess } from "react-icons/md"; 
 import { NavLink } from 'react-router-dom';
@@ -54,12 +53,6 @@ export function SliderMeets() {
     };
 
     const slidesData = [
-        {
-            title: "Meet Conference",
-            description: "Meet Conference is a multifaceted event that brings together students, scientists, and professionals to exchange knowledge and innovations. It includes conferences (MEET.STUDENTS and MEET.SCIENCE), engaging talks (MEET.TALKING), and an exhibition of innovative projects (MEET.EXPO).",
-            buttonText: "Join us",
-            imgSrc: conf,
-        },
         {
             title: "MEET.STUDENTS",
             description: "A special conference for students to showcase their research, innovation and ideas in the fields of medicine, engineering, education and technology.",

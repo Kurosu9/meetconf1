@@ -13,8 +13,8 @@ export function MainPage() {
                 
                 {/* header */}
                 <div className={classes.header}>
-                    <div className={classes.container}>
-                        <div className={classes.header_inner}>
+                    <div className={classes.header_inner}>
+                        <div className={classes.container}>
                             <div className={classes.header_text}>
                                 <div className={classes.header_content}>
                                     <h1>Meet Conference</h1>

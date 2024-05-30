@@ -4,6 +4,7 @@
     font-family: 'Montserrat';
     font-weight: normal;
     padding: 20px;
+    border-top: 1px solid rgb(87, 86, 86);
 }
 
 .container {
@@ -55,5 +56,5 @@ h4 {
 }
 
 .logos img:hover {
-    background-color: white;
+    cursor: pointer;
 }

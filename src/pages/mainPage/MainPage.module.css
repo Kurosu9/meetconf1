@@ -5,12 +5,13 @@
 
 .main {
     min-height: 100vh;
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 .header {
     position: relative;
-    background-color: #095D75;
+    background-color: #1c1d1e;
+    margin-bottom: 30px;
 }
 
 .header::before {
@@ -24,7 +25,7 @@
 }
 
 .header_inner {
-    background: url("./img/meeting.jpeg") no-repeat left center;
+    background: url("") no-repeat left center;
     background-size: cover;
     width: 900px;
     height: 500px;
@@ -33,10 +34,56 @@
 .header_text {
     position: absolute;
     display: flex;
-    align-items: center; /* Выравнивание по вертикали */
-    justify-content: flex-end; /* Выравнивание по горизонтали (справа) */
-    width: 83%;
-    padding-top: 80px;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 1200px;
+    margin-top: 70px;
     color: white;
-    z-index: 1;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    width: 500px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.header_content h1 {
+    width: 700px;
+}
+
+.header_content p {
+    font-size: 18px;
+}
+
+/****************SliderOfLogos***********************/
+
+.logos {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.logos_inner {
+    height: 200px;
+    background-color: #F7931E;
+}
+
+.logos_inner img {
+    width: 100px;
+}
+
+/****************SliderOfMeets***********************/
+
+.meets {
+    position: relative;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.meets_inner {
+    width: 1080px;
+    margin: 0px auto;
 }

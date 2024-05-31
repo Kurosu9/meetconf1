@@ -4,29 +4,29 @@ import axios from 'axios';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import classes from './SliderGallery.module.css';
 
-// Кастомные стрелки для слайдера
+
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
-      className={`${className} ${classes.custom_arrow} ${classes.next_arrow}`}
+      className={`${classes.customArrow} ${classes.nextArrow}`}
       onClick={onClick}
       style={{ ...style }}
     >
-      <AiOutlineArrowRight />
+      <AiOutlineArrowRight className={classes.arrowIconNext}/>
     </div>
   );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
-      className={`${className} ${classes.custom_arrow} ${classes.prev_arrow}`}
+      className={`${classes.customArrow} ${classes.prevArrow}`}
       onClick={onClick}
       style={{ ...style }}
     >
-      <AiOutlineArrowLeft />
+      <AiOutlineArrowLeft className={classes.arrowIconPrev}/>
     </div>
   );
 }
@@ -78,17 +78,19 @@ export function SliderGallery() {
         </select>
       </div>
 
-      <Slider {...settings}>
-        {filteredImages.map(image => (
-          <div key={image.id} className={classes.slide}>
-            <img src={image.url} alt={image.title} className={classes.slide_image}/>
-            <div className={classes.slide_caption}>
-              <h3>{image.title}</h3>
-              <p>{image.description}</p>
+      <div className={classes.slider}>
+        <Slider {...settings}>
+          {filteredImages.map(image => (
+            <div key={image.id} className={classes.slide}>
+              <img src={image.url} alt={image.title} className={classes.slide_image}/>
+              <div className={classes.slide_caption}>
+                <h3>{image.title}</h3>
+                <p>{image.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

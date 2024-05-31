@@ -27,6 +27,20 @@
       "description": "An exhibition showcasing innovative projects, products, and services in medicine, engineering, education, and technology.",
       "url": "/path/to/expo.jpg",
       "year": "2022"
+    },
+    {
+      "id": 5,
+      "title": "MEET.TALKING",
+      "description": "An engaging session featuring non-academic science communication in the form of short presentations by scientists.",
+      "url": "/path/to/talking.jpg",
+      "year": "2021"
+    },
+    {
+      "id": 6,
+      "title": "MEET.EXPO",
+      "description": "An exhibition showcasing innovative projects, products, and services in medicine, engineering, education, and technology.",
+      "url": "/path/to/expo.jpg",
+      "year": "2021"
     }
   ]
 }

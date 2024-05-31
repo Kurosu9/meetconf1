@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import classes from "./SliderLogos.module.css";
 import alatoo from "./img/alatoo.png";
+import kgma from "./img/kgma.png"
 
 
 
@@ -27,13 +28,13 @@ export function SliderLogos() {
                     <img src={alatoo} alt="alatoo"/>
                 </div>
                 <div className={classes.logo}>
-                    <img src={alatoo} alt="alatoo"/>
+                    <img src={kgma} alt="kgma"/>
                 </div>
                 <div className={classes.logo}>
                     <img src={alatoo} alt="alatoo"/>
                 </div>
                 <div className={classes.logo}>
-                    <img src={alatoo} alt="alatoo"/>
+                    <img src={kgma} alt="kgma"/>
                 </div>
             </Slider>
         </div>

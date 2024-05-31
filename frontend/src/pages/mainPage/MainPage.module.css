@@ -27,10 +27,11 @@
 }
 
 .header_inner {
-    position: a;
-    background: url("./img/conference.png") no-repeat right 580px center;
+    background: url("./img/conference.png") no-repeat right 550px center;
     background-size: 900px;
     height: 500px;
+    width: 1500px;
+    margin: 0 auto;
 }
 
 .header_text {
@@ -90,7 +91,7 @@
     margin: 0px auto;
 }
 
-/****************SliderOfMeets***********************/
+/****************Gallery***********************/
 
 .gallery {
     position: relative;

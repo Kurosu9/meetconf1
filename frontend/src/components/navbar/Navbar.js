@@ -21,7 +21,7 @@ export function Navbar(props) {
                             <Link className={classes.navlink} to="meets" smooth={true} duration={500} offset={-70}>Meets</Link>
                         </Nav.Item>
                         <Nav.Item className={classes.section}>
-                            <Link className={classes.navlink}>Gallery</Link>
+                            <Link className={classes.navlink} to="gallery" smooth={true} duration={500} offset={-70}>Gallery</Link>
                         </Nav.Item>
                         <Nav.Item className={classes.section}>
                             <NavLink className={classes.navlink} to='/archive'>Archive</NavLink>

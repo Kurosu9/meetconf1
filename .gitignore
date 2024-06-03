@@ -1,0 +1,6 @@
+.backend/idea
+.backend/env
+.backend/venv
+.backend/gallery/__pycache__
+.backend/event_registration/__pycache__
+.backend/meetConf/__pycache__

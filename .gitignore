@@ -4,6 +4,6 @@ backend/event_registration/__pycache__/
 backend/meetConf/__pycache__/
 
 # Ignore venv,idea,env folder inside backend
-backend/venv/
-backend/idea/
-backend/env/
+backend/.venv/
+backend/.idea/
+backend/.env

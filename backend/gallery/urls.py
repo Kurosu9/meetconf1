@@ -3,10 +3,7 @@ from rest_framework.routers import DefaultRouter
 from .views import GalleryViewSet
 
 router = DefaultRouter()
-router.register(r'gallery', GalleryViewSet, basename='gallery')
-# router.register(r'roles', RoleViewSet, basename='role')
-# router.register(r'conference_users', ConfUserViewSet, basename='conf-user')
-# router.register(r'users', UserViewSet, basename='user')
+router.register(r'images', GalleryViewSet, basename='gallery')
 
 
 urlpatterns = [

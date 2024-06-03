@@ -88,7 +88,7 @@ DATABASES = {
         'USER': config('DATABASE_USER'),
         'PASSWORD': config('DATABASE_PASSWORD'),
         'HOST': '127.0.0.1',
-        'PORT': '5433',
+        'PORT': '5432',
     }
 }
 
@@ -98,9 +98,9 @@ REST_FRAMEWORK = {
 }
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dw25dpcex',
-    'API_KEY': '755768912294592',
-    'API_SECRET': 'DGXjNs-R_cIjSA9nOYMBPDZ80pY'
+    'CLOUD_NAME': config('CLOUD_NAME'),
+    'API_KEY': config('API_KEY'),
+    'API_SECRET': config('API_SECRET'),
 }
 
 MEDIA_URL = '/media/'  # or any prefix you choose
